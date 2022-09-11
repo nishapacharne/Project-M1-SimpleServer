@@ -124,18 +124,18 @@
   <table>
     <tr>
       <td><label>PRINCIPLE</label></td>
-      <td><input name="p" type="number" value="1000"></td>
+      <td><input name="p" type="number" value="5000"></td>
     </tr>
     <tr>
       <td><label>TIME PERIOD</label></td>
-      <td><input type="number" name="t" value="1"></td>
+      <td><input type="number" name="t" value="2"></td>
     </tr>
     <tr>
       <td><label>RATE OF INTEREST</label></td>
-      <td><input type="number" name="r" value="10.5"></td>
+      <td><input type="number" name="r" value="11.7"></td>
     </tr>
     <tr>
-      <td><label>RATE OF INTEREST</label></td>
+      <td><label>INTEREST</label></td>
       <td><input type="number" name="i" value="0"></td>
     </tr>
     
@@ -162,12 +162,8 @@
 
       let a = 0
 
-      //if (i == 0) {
-        a = p * (1 + (r * t / 100))
-     // }
-      //else {
-      //  a = p * (Math.pow((1 + r)), t);
-      //}
+        a = r * (1 + (p * t / 100))
+     
       amount.innerHTML = `Loan Amount is ${a}`
 
     }
